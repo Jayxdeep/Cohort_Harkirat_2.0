@@ -62,3 +62,5 @@ getSlice("Hello World",0,6)
     console.log("after toLowerCase:",str.toLowerCase())
  }
  toLower("LUNPAGLI")
+
+ // some change
