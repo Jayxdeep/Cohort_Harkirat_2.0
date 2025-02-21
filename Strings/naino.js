@@ -55,12 +55,10 @@ getSlice("Hello World",0,6)
     console.log("Original string:",str);
     console.log("after toUpperCase:",str.toUpperCase())
  }
- toUpper("chutpaglu")
+ toUpper("hello world")
  //
  function toLower(str){
     console.log("Original string:",str);
     console.log("after toLowerCase:",str.toLowerCase())
  }
- toLower("LUNPAGLI")
-
- // some change
+ toLower("HELLO WORLD")
