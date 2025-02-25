@@ -16,4 +16,4 @@ function explainParseFloat(value){
 //usage of parseFloat
 explainParseFloat("42")
 explainParseFloat("42px")
-explainParseFloat("3.14")
+explainParseFloat("3.14");
