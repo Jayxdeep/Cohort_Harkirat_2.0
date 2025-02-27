@@ -42,4 +42,4 @@ function forEachEX(arr){
         console.log(item,index);
     })
 }
-forEachEX([1,2,3,]);
+forEachEX([1,2,3,])
