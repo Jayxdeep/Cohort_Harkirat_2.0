@@ -14,3 +14,17 @@ console.log(val2);
 //     sum=sum+i;
 // }
 // console.log(sum);
+//function calling function
+ function sq(n){
+    return n*n;
+ }
+ function cb(n){
+    return n*n*n
+ }
+ function everything(a,b,fn){
+    const val1=fn(a)
+    const val2=fn(b)
+    return val1+val2
+ }
+
+ console.log(everything(a,b,sq))
