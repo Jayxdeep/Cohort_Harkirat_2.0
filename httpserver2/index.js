@@ -7,6 +7,9 @@ app.get('/',(req,res)=>{
     // console.log(req.body)
     res.send("hello world")
 })
+app.get('/mobile-network/bat',(req,res)=>{
+    res.send("I am jaydeep aka spiderman")
+})
 app.post('/backend-api/converstion',(req,res)=>{//basically ml thingy 
     //query params
     //body params req.body.message
