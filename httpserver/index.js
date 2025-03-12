@@ -1,7 +1,10 @@
 const express = require('express')
 const app = express()
+const bodyParser=require('body-parser')
 const port = 3000//creating new route to 3000
 //same as fs.readFile fs purpose to write files on system
+app.use(bodyParser.json());
+
 app.get("/route-handler",(req,res)=>{
   res.json({
     name:"Jaydeep",
@@ -11,10 +14,11 @@ app.get("/route-handler",(req,res)=>{
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-app.post('/conversation',(req,res)=>{
-  console.log('Headers:',req.headers)
-  res.send({
-    msg:"i am Jaydeep"
+app.post('/backend api/conversation',(req,res)=>{
+  const message=req.body.message;
+  console.log(message)
+  res.json({
+    output:"2+2=4"
   })
 })
 
