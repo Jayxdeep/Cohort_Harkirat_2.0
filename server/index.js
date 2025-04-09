@@ -24,8 +24,8 @@ app.get('/',(req,res)=>{
     numberofUnhealthyKidneys
   })
 })
-app.use(express.json())
-//middlewares
+app.use(express.json())//middleware
+
 app.post('/',(req,res)=>{
     const isHealthy=req.body.isHealthy
     user[0].kidneys.push({
